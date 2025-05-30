@@ -9,7 +9,7 @@ import os
 
 
 genai.configure(api_key="AIzaSyCvM4yzyrUflRJdug-E9wtV_0ALWCwVGY0")
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Memory to store citations
 agent_memory = {}
