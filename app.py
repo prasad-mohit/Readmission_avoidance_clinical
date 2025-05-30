@@ -7,12 +7,8 @@ from pptx.util import Inches
 from fpdf import FPDF
 import os
 
-GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY")
-if not GEMINI_API_KEY:
-    st.error("Please set the GEMINI_API_KEY in Streamlit Secrets.")
-    st.stop()
 
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key="AIzaSyCvM4yzyrUflRJdug-E9wtV_0ALWCwVGY0")
 model = genai.GenerativeModel('gemini-pro')
 
 # Memory to store citations
